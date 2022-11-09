@@ -1,0 +1,39 @@
+
+body{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(224, 197, 255);
+    
+}
+
+#container{
+   
+    margin: auto;
+    width: 50%;
+    height: 60%;
+    border-radius: 20px;
+    background-color: rgb(132, 75, 238);
+}
+
+#login{
+    color: aliceblue;
+    text-align: center;
+    display: block;
+}
+
+#userData{
+    color:white;
+    display: flex;
+    justify-content: space-around;
+}
+#loginButton{
+    font-size:  20px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+#logButton{
+    font-size: 20px;
+}
