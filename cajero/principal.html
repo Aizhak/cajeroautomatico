@@ -4,24 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="principal.css">
     <title>Document</title>
 </head>
 <body>
 
-<h1> Bienvenido a banco Bajo el colchon</h1>
-<p id="fondo_actual"> Que accion deseas realizar</p>
+<h1 id="bienvenida"> Bienvenido a banco Bajo el colchon</h1>
+
+<section id="container">
+<p id="fondo_actual"> Ingresa una cantidad y presiona el boton de la Accion que deseas realizar</p>
  
 
-
-    <Input Id="cantidad">
-    <button onclick="depositar()" >Depositar</button>
-    <button onclick="retirar()"> Retirar</button>
-    <button onclick="consultar()"> Consultar</button>
-    <button onclick="salir()"> salir </button>
+<section id="botones">
+    <Input Id="cantidad" placeholder="Ingresa una cantidad">
+    <button id="boton" onclick="depositar()" >Depositar</button>
+    <button id="boton" onclick="retirar()"> Retirar</button>
+    <button id="boton" onclick="consultar()"> Consultar</button>
+    <button id="boton" onclick="salir()"> salir </button>
     </Input>
+</section>
 
-
+</section>
     <script src="cajero.js">
 
     </script>

@@ -1,7 +1,7 @@
 
 body{
    
-    display: flex;
+   display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgb(224, 197, 255);
@@ -9,24 +9,24 @@ body{
 }
 
 #container{
-   
-    margin: auto;
-    width: 50%;
+    width: 60%;
     height: 60%;
     border-radius: 20px;
     background-color: rgb(132, 75, 238);
 }
 
 #login{
+    
     color: aliceblue;
     text-align: center;
     display: block;
 }
 
 #userData{
+    margin: 0px 10px 0px 10px;
     color:white;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    gap: 5px;
 }
 #loginButton{
     font-size:  20px;
@@ -35,5 +35,9 @@ body{
     justify-content: center;
 }
 #logButton{
+    
+    margin: 10px;
     font-size: 20px;
 }
+/* estilo de principal*/
+

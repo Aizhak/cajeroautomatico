@@ -1,19 +1,10 @@
 
 var userData = "";
 var fondo = 0;
+var fondo2 = 0;
+var auxResta = 0;
 
-
-//index
-//function save_username() {
- // var userData = document.getElementById('user').value
- 
-//}      
-
-//principal 
-//var username = window.localStorage.getItem('user')
-//document.getElementById("usuario").innerHTML = username;
-
-// funcion de Login para 3 usuarios
+// funcion de Login para 3 usuarios index html
 function login (form)
 {
 
@@ -23,12 +14,13 @@ switch (form.user.value){
       var userData = "pedro"
       window.localStorage.setItem("user", userData)
       window.localStorage.setItem(fondo, 800)  
+      console.log(fondo)
       location="principal.html";} 
     else {alert("Error de password");
     break;}
     
   case 'sofia':
-    if (form.pass.value=="1234") {
+    if (form.pass.value=="1235") {
       var userData = "pedro"
       window.localStorage.setItem("user", userData)
       window.localStorage.setItem(fondo, 200)  
@@ -47,45 +39,45 @@ switch (form.user.value){
   break;}
 
   default: alert("Error de usuario")
-  break;;
+  break;
 }
 }
 
-//botonera
+//botonera principal html
+
+fondo2 = parseInt( window.localStorage.getItem(fondo))
+
 function consultar(){
-fondo = parseFloat (window.localStorage.getItem(fondo))
-var fondo_actual= document.getElementById("fondo_actual");
-fondo_actual.innerHTML = "Actualmente tienes:" + fondo
 
+var fondo_actual= document.getElementById("fondo_actual");
+fondo_actual.innerHTML = "Actualmente tienes:" + fondo2
 }
 
 function salir(){
   location="index.html";
   }
 
-
 function depositar(){
  var cantidad = document.getElementById("cantidad").value
- fondo = parseFloat (window.localStorage.getItem(fondo))
- fondo = fondo + parseFloat (cantidad)
+ fondo2 = fondo2 + parseInt (cantidad)
  console.log ("Estoy depositando")
 
  var fondo_actual= document.getElementById("fondo_actual");
- fondo_actual.innerHTML = "Actualmente tienes:" + fondo
+ fondo_actual.innerHTML = "Actualmente tienes:" + fondo2
 }
 
 function retirar(){
 
     var cantidad = document.getElementById("cantidad").value
-    fondo = parseFloat (window.localStorage.getItem(fondo))
-  
-   if (fondo-(parseFloat (cantidad))<= 0){
-    fondo_actual.innerHTML = "no tienes saldo suficiente"
-   }
-    fondo = fondo - parseFloat (cantidad)
+    auxResta = fondo2 - parseFloat (cantidad)
+   if (fondo2-(parseFloat (cantidad))<= 0){
+    var fondo_actual= document.getElementById("fondo_actual");
+   fondo_actual.innerHTML = "no tienes saldo suficiente"
+   }else{
+    fondo2 = fondo2 - parseFloat (cantidad)
     console.log ("Estoy retirando")  
     var fondo_actual= document.getElementById("fondo_actual");
-    fondo_actual.innerHTML = "Actualmente tienes:" + fondo
+    fondo_actual.innerHTML = "Actualmente tienes:" + fondo2}
 }
 
 

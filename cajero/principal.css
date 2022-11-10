@@ -1,0 +1,67 @@
+body{
+ display: flex;
+ justify-content: center; 
+ align-items: center; 
+ flex-direction: column;
+ background-color: rgb(224, 197, 255);
+    
+}
+
+#bienvenida{
+    text-align: center;
+    display: block;
+}
+
+#container{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+    background-color: rgb(204, 0, 255);
+    border-radius: 16px;
+    width: 60%;
+    height: 60%;
+    border: 10px solid rgb(92, 33, 255);
+}
+
+#cantidad{
+    
+    font-size: 20px;
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+    border:  2px solid black;
+    display: block;
+}
+
+#fondo_actual{
+    font-size: 20px;
+    width: 80%;
+    height: 110px;
+   
+    text-align: center;
+    color: aliceblue;
+    background-color: rgb(15, 78, 39);
+    border-radius: 10px;
+    border: 3px solid black;
+    display: block;
+}
+
+#botones{
+    width: 80%;
+    display:grid;
+    gap:10px;
+    margin-bottom: 10px;
+    grid-template-columns: auto auto;
+}
+
+#cantidad{
+    text-align: right;
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+#boton{
+    font-size:2.5vh;
+    width: 100%;
+    height: 80px;
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
@@ -13,16 +13,19 @@
    
   
 
-    <form action="" >
-    <h1>--Login--</h1> 
+    <form action="" id="container">
+    <h1 id="login">--Login--</h1> 
 
-    <label for="">Usuario</label>
-     <input type="text" name="user" id="">
+    <section id="userData">
+    <label for="">Usuario:</label>
+     <input type="text" name="user" id="Usuario">
 
-     <label for= "">Password</label>
+     <label for= "">Password:</label>
      <input type="password" name="pass" id="">
-
-     <input  type="button" value="Ingresar" onclick="login(this.form)" >
+    </section>
+    <div id="loginButton">
+     <input  type="button" value="Ingresar" onclick="login(this.form)" id="logButton">
+    </div>
     </form>
 
     
